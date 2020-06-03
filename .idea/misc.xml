@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-filecabinets" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-filescan" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-record" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-sign" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-sys" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-transfile" />
+    <file type="web" url="file://D:/edoc/cloudrecord-service-workflow" />
+    <file type="web" url="file://D:/edoc/cloudrecord-task-job" />
+    <file type="web" url="file://D:/edoc/cloudrecord-web" />
+    <file type="web" url="file://D:/edoc/cloudrecord-webservice" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="D:/edoc/cloudrecord-common/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-filecabinets/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-filescan/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-record/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-sign/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-sys/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-transfile/pom.xml" />
+        <option value="D:/edoc/cloudrecord-service-workflow/pom.xml" />
+        <option value="D:/edoc/cloudrecord-task-job/pom.xml" />
+        <option value="D:/edoc/cloudrecord-web/pom.xml" />
+        <option value="D:/edoc/cloudrecord-webservice/pom.xml" />
+        <option value="D:/edoc/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

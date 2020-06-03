@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://D:/edoc" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-common" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-filecabinets" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-filescan" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-record" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-sign" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-sys" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-transfile" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-service-workflow" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-task-job" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-web" charset="UTF-8" />
+    <file url="file://D:/edoc/cloudrecord-webservice" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

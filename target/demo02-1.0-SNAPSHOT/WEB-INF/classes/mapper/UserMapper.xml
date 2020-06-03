@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dxs.dao.UserMapper">
+    <sql id="column_List">
+        userID,name,age,sex
+    </sql>
+    <select id="queryRowCount" resultType="int">
+        select count(userID)
+        from  demo.users
+        where age between 20 and 40
+    </select>
+    <select id="selectPageBySql" parameterType="map" resultType="users">
+        select
+        <include refid="column_List"/>
+        from demo.users
+        where age between 20 and 40
+        limit #{startIndex},#{pageSize}
+    </select>
+
+<!--    <select id="selectByMyWrapper" parameterType="map" resultType="users">
+        select * from demo.users
+        limit #{startIndex},#{pageSize}
+    </select>-->
+</mapper>

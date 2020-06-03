@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo02" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloudrecord-common" target="1.8" />
+      <module name="cloudrecord-modules" target="1.8" />
+      <module name="cloudrecord-service-filecabinets" target="1.8" />
+      <module name="cloudrecord-service-filescan" target="1.8" />
+      <module name="cloudrecord-service-record" target="1.8" />
+      <module name="cloudrecord-service-sign" target="1.8" />
+      <module name="cloudrecord-service-sys" target="1.8" />
+      <module name="cloudrecord-service-transfile" target="1.8" />
+      <module name="cloudrecord-service-workflow" target="1.8" />
+      <module name="cloudrecord-task-job" target="1.8" />
+      <module name="cloudrecord-web" target="1.8" />
+      <module name="cloudrecord-webservice" target="1.8" />
+      <module name="demo02" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloudrecord-common" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-filecabinets" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-filescan" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-record" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-sign" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-sys" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-transfile" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-service-workflow" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-task-job" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-web" options="-XDignore.symbol.file" />
+      <module name="cloudrecord-webservice" options="-XDignore.symbol.file" />
+    </option>
+  </component>
+</project>
