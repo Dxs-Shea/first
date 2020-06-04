@@ -60,23 +60,28 @@ public class UserController {
     }
 
     @PostMapping("/selectPageBySql")
-    public String selectPageBySql(@RequestBody String jsonStr){
+    public JSONObject selectPageBySql(@RequestBody JSONObject jsonObject){
+        try {
+            Integer startPage = jsonObject.getInteger("startPage");
+            Integer pageSize = jsonObject.getInteger("pageSize");
 
-        JSONObject jsonObject = JSON.parseObject(jsonStr);
+            startPage = startPage==null?1:startPage;
+            pageSize = pageSize==null?5:pageSize;
 
-        Integer startIndex = jsonObject.getInteger("startIndex");
-        Integer pageSize = jsonObject.getInteger("pageSize");
-        startIndex=startIndex==null?1:startIndex;   //当前页码
-        pageSize=pageSize==null?5:pageSize;   //页面大小
+            //获取总数据大小
+            int total = userService.queryRowCount();
+            int currIndex = (startPage - 1) * pageSize;
+            //获取当前页数据
+            List<Users> users = userService.selectPageBySql(currIndex, pageSize);
 
-        //获取总数据大小
-        int total = userService.queryRowCount();
-        //获取当前页数据
-        List<Users> users = userService.selectPageBySql(startIndex,pageSize);
-
-        String s = JSON.toJSONString(users);
-
-        return s;
+            JSONObject ret = new JSONObject();
+            ret.put("total", total);
+            ret.put("users", users);
+            return ret;
+        } catch(Exception e){
+            logger.error(e.getMessage(), e);
+        }
+        return null;
     }
 
    /* @PostMapping("/selectByMyWrapper")

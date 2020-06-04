@@ -24,9 +24,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,Users> implements Us
     }
 
     @Override
-    public List<Users> selectPageBySql(Integer startIndex,Integer pageSize) {
+    public List<Users> selectPageBySql(Integer currIndex,Integer pageSize) {
         HashMap<String, Integer> map = new HashMap<>();
-        map.put("startIndex",startIndex);
+        map.put("currIndex",currIndex);
         map.put("pageSize",pageSize);
         return userMapper.selectPageBySql(map);
     }

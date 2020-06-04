@@ -12,7 +12,7 @@ import java.util.Map;
 
 public interface UserService extends IService<Users> {
     int queryRowCount();
-    List<Users> selectPageBySql(Integer startIndex,Integer pageSize);
+    List<Users> selectPageBySql(Integer currIndex,Integer pageSize);
 
 //    List<Users> selectByMyWrapper(Map map, Wrapper<Users> userWrapper);
 }

@@ -15,7 +15,7 @@
         <include refid="column_List"/>
         from demo.users
         where age between 20 and 40
-        limit #{startIndex},#{pageSize}
+        limit #{currIndex},#{pageSize}
     </select>
 
 <!--    <select id="selectByMyWrapper" parameterType="map" resultType="users">
